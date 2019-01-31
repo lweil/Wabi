@@ -1,0 +1,136 @@
+html, body{
+	margin: 0;
+}
+
+
+#background{
+	background-color: #EB3636;
+	background-image: url(../images/background-1920-1080.png);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+#loginContainer *{
+	color: #fff;
+	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-weight: normal;
+	line-height:1em;
+	box-sizing:border-box;
+}
+#loginContainer{
+	width:80%;
+	margin:50px auto;
+	max-width: 1024px;
+}
+#inputContainer h2, #inputContainer h1, #inputContainer h3{
+	font-family: 'Raleway', 'Helvetica Neue', sans-serif;
+	font-size: 20px;
+}
+#inputContainer{
+	width:400px;
+	padding:50px;
+	float:left;
+  border-right: 1px solid #fb4c36;
+  height: 550px;
+}
+#inputContainer h2{
+	text-align: center;
+}
+#inputContainer input[type="text"],#inputContainer input[type="email"],#inputContainer input[type="password"]{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #00000038;
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: #4241412e;
+    height: 32px;
+    line-height: 27px;
+    padding: 0px 15px;
+    display: block;
+    outline: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+  opacity: 0.50;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+  opacity: 0.50;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+  opacity: 0.50;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+  opacity: 0.50;
+}
+#inputContainer button{
+	background-color: transparent;
+    border: 1px solid #fffffff2;
+    border-radius: 35px;
+    font-size: 14px;
+    display: block;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    height: 38px;
+    width: 90%;
+    outline:none;
+}
+#inputContainer button:hover{
+	cursor: pointer;
+}
+.hasAccountText{
+	text-align: center;
+}
+.hasAccountText span{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.hasAccountText span:hover{
+	cursor: pointer;
+}
+
+#loginForm{
+	margin:80px auto;
+	display: none;
+	text-align: center;
+	font-size: 12px;
+}
+#registerForm{
+  margin:0px auto;
+  display: none;
+  text-align: center;
+  font-size: 12px;
+
+}
+
+#loginText{
+    padding: 120px 0px 0px 45px;
+    display: table-cell;
+}
+#loginText h1{
+    color: #ffbd5bed;
+    font-size: 50px;
+    font-weight: 1000;
+    font-family: 'Raleway', 'Helvetica Neue', sans-serif;
+    letter-spacing: 3px;
+}
+#loginText h2{
+  margin: 35px 0px;
+  font-size: 22px;
+}
+#loginText ul{
+  padding: 0px;
+}
+#loginText li{
+  font-size: 16px;
+  list-style-type: none;
+  padding: 5px 33px;
+  background: url(../images/icons/icons8_Checkmark_25px.png) no-repeat 0 0;
+}

@@ -1,0 +1,129 @@
+body,html{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+*{
+	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+
+}
+#nowPlayingBarContainer{
+    width: 100%;
+    background-color: #2b0303;
+    height: 65px;
+    bottom: 0px;
+    position: fixed;
+    min-width: 640px;
+}
+#nowPlayingBar{
+	display: flex;
+	height: 35px;
+    padding: 5px;
+	box-sizing: border-box;
+}
+#nowPlayingLeft, #nowPlayingRight{
+	width: 30%;
+	min-width: 180px;
+}
+#nowPlayingCenter{
+	width: 40%;
+	max-width: 700px;
+	min-width: 260px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#nowPlayingBar .content{
+	width: 100%;
+	margin-top: 5px;
+	height: 45px;
+}
+.playerControls .buttons{
+	margin: 0px auto;
+	display: table;
+	height: 75%;
+}
+.controlButton{
+	background-color: transparent;
+    border: none;
+    vertical-align: middle;
+    padding: 0px 15px;
+    outline:none;
+
+}
+#nowPlayingCenter button:hover{
+	cursor: pointer;
+}
+.playbackBar{
+	display: flex;
+}
+.progressTime{
+	color: #A9A390;
+    font-size: 10px;
+    min-width: 40px;
+    text-align: center;
+}
+.progressBar{
+    width: 100%;
+    height: 12px;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.progressBarBg{
+	background-color: #a9a39047;
+    height: 3px;
+    width: 100%;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+.progress{
+	background-color: #9c957c;
+    height: 3px;
+    width: 0;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+#nowPlayingLeft{
+	position: relative;
+}
+#nowPlayingLeft .content{
+	display: inline-flex;
+	position: absolute;
+	width: 65%;
+}
+.albumLink img{
+	height: 100%;
+    max-width: 50px;
+}
+.trackinfo{
+	color: #B6AF96;
+	margin: 8px 0px 5px 5px;
+    display: grid;
+    font-size: 14px;
+}
+.artistName{
+	font-size: 12px;
+	color: #b6af96ad;
+}
+#nowPlayingRight{
+	position: relative;
+	margin-top: 11px;
+}
+
+.volumeBar{
+	position: absolute;
+	margin-left: 40%;
+	min-width: 185px;
+	right: 5px;
+
+}
+.volumeBar .progressBar{
+	width: 25%;
+	min-width: 100px;
+	align-items: center;
+
+}
+.volume img{
+	margin-top: 5px;
+}
